@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_today_exchange_rate"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_central_bank" />
+
+    <item
+        android:id="@+id/navigation_other"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_other" />
+
+</menu>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.SettingFragment"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardElevation="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cbBank"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/exchange_layout_bg"
+        android:drawableStart="@drawable/cb_logo"
+        android:drawablePadding="10dp"
+        android:gravity="center|start"
+        android:text="@string/title_cb"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/kbzBank"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/exchange_layout_bg"
+        android:drawableStart="@drawable/kbz_logo"
+        android:drawablePadding="10dp"
+        android:gravity="center|start"
+        android:text="@string/title_kbz"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbBank" />
+
+    <TextView
+        android:id="@+id/ayaBank"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/exchange_layout_bg"
+        android:drawableStart="@drawable/aya_logo"
+        android:drawablePadding="10dp"
+        android:gravity="center|start"
+        android:text="@string/title_aya"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kbzBank" />
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/exchange_layout_bg"
+        android:drawableStart="@drawable/ic_share"
+        android:drawablePadding="10dp"
+        android:gravity="center|start"
+        android:text="@string/title_share"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayaBank" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/exchange_layout_bg"
+        android:drawableStart="@drawable/ic_info"
+        android:drawablePadding="10dp"
+        android:gravity="center|start"
+        android:text="@string/title_about"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

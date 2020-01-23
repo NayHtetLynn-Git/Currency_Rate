@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_today_exchange_rate">
+
+    <fragment
+        android:id="@+id/navigation_today_exchange_rate"
+        android:name="com.nayhtetlynn.currencyrate.ui.fragment.ExchangeRateFragment"
+        android:label="@string/today_exchange"
+        tools:layout="@layout/fragment_exchange_rate" />
+
+    <fragment
+        android:id="@+id/navigation_other"
+        android:name="com.nayhtetlynn.currencyrate.ui.fragment.SettingFragment"
+        android:label="@string/title_other"
+        tools:layout="@layout/fragment_setting"/>
+
+
+</navigation>
